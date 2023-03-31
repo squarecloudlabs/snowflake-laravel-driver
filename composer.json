@@ -1,19 +1,23 @@
 {
-  "name": "singlestoredb/singlestoredb-laravel",
-  "description": "A SingleStoreDB database driver for Laravel.",
+  "name": "squarecloudlabs/snowflake-laravel-driver",
+  "description": "A Snowflake database driver for Laravel.",
   "type": "library",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
-      "SingleStore\\Laravel\\": "src/"
+      "Snowflake\\Laravel\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SingleStore\\Laravel\\Tests\\": "tests/"
+      "Snowflake\\Laravel\\Tests\\": "tests/"
     }
   },
   "authors": [
+    {
+      "name": "Nigel James",
+      "email": "nigel.james@squarecloud.com.au"
+    },
     {
       "name": "Aaron Francis",
       "email": "aarondfrancis@gmail.com"
@@ -24,7 +28,7 @@
     }
   ],
   "require": {
-    "php": "^7.3|^8.0",
+    "php": "^8.0",
     "illuminate/container": "^8.0|^9.0|^10.0",
     "illuminate/database": "^8.0|^9.0|^10.0",
     "illuminate/events": "^8.0|^9.0|^10.0",
@@ -41,7 +45,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "SingleStore\\Laravel\\SingleStoreProvider"
+        "Snowflake\\Laravel\\SnowflakeProvider"
       ]
     }
   },

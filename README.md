@@ -1,13 +1,14 @@
-# SingleStore Driver for Laravel <!-- omit in toc -->
+# Snowflake Driver for Laravel <!-- omit in toc -->
 
 [![Latest Stable Version](https://poser.pugx.org/singlestoredb/singlestoredb-laravel/v)](https://packagist.org/packages/singlestoredb/singlestoredb-laravel) [![Total Downloads](https://poser.pugx.org/singlestoredb/singlestoredb-laravel/downloads)](https://packagist.org/packages/singlestoredb/singlestoredb-laravel) [![License](https://poser.pugx.org/singlestoredb/singlestoredb-laravel/license)](https://packagist.org/packages/singlestoredb/singlestoredb-laravel) [![PHP Version Require](https://poser.pugx.org/singlestoredb/singlestoredb-laravel/require/php)](https://packagist.org/packages/singlestoredb/singlestoredb-laravel) [![Github Actions status image](https://github.com/singlestore-labs/singlestoredb-laravel-driver/actions/workflows/tests.yml/badge.svg)](https://github.com/singlestore-labs/singlestoredb-laravel-driver/actions)
 
-This repository contains the official SingleStoreDB Driver for Laravel. This driver wraps the official MySQL support in Laravel in order to make it work nicer with SingleStoreDB. Specifically, this driver provides the following advantages over vanilla Laravel MySQL support:
+This repository contains a Snowflake Driver for Laravel. This driver wraps the official MySQL support in Laravel in order to make it work nicer with Snowflake. Specifically, this driver provides the following advantages over vanilla Laravel MySQL support:
 
-- Extensions to Eloquent allowing specific SingleStoreDB features to be specified through the Eloquent api. See [Migrations](#migrations) for supported features.
-- Integration tested against SingleStoreDB across a matrix of PHP and Laravel versions.
-- JSON column support
-- Other compatibility fixes in query generation
+- Extensions to Eloquent allowing specific Snowflake features to be specified through the Eloquent api. See [Migrations](#migrations) for supported features. @todo
+- Integration tested against Snowflake across a matrix of PHP and Laravel versions. @todo
+- JSON column support @todo
+- Other compatibility fixes in query generation @todo
+- 
 
 ## TOC <!-- omit in toc -->
 
@@ -41,7 +42,7 @@ This repository contains the official SingleStoreDB Driver for Laravel. This dri
 You can install the package via composer:
 
 ```shell
-composer require singlestoredb/singlestoredb-laravel
+composer require squarecloudlabs/snowflake-laravel-driver
 ```
 
 **This package requires pdo_mysql** to be installed. If you aren't sure check to see if `pdo_mysql` is listed when you run `php -i`.
@@ -52,11 +53,11 @@ To enable the driver, head to your `config/database.php` file and create a new e
 
 ```php
 [
-    'default' => env('DB_CONNECTION', 'singlestore'),
+    'default' => env('DB_CONNECTION', 'snowflake'),
 
     'connections' => [
-        'singlestore' => [
-            'driver' => 'singlestore',
+        'snowflake' => [
+            'driver' => 'snowflake',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST'),
             'port' => env('DB_PORT'),
@@ -79,7 +80,7 @@ To enable the driver, head to your `config/database.php` file and create a new e
 ]
 ```
 
-> The SingleStore driver is an extension of the MySQL driver, so you could also just change your `driver` from `mysql` to `singlestore`.
+> The Snowflake driver is an extension of the MySQL driver, so you could also just change your `driver` from `mysql` to `singlestore`.
 
 In case you want to store failed jobs in SingleStore, then make sure you also set it as the `database` in your `config/queue.php` file. At which point, you may actually prefer to set `DB_CONNECTION='singlestore'` in your environment variables.
 

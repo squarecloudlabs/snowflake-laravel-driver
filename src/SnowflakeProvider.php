@@ -1,10 +1,10 @@
 <?php
 
-namespace SingleStore\Laravel;
+namespace Snowflake\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use SingleStore\Laravel\Connect\Connection;
-use SingleStore\Laravel\Connect\Connector;
+use Snowflake\Laravel\Connect\Connection;
+use Snowflake\Laravel\Connect\Connector;
 
 class SingleStoreProvider extends ServiceProvider
 {
@@ -13,13 +13,13 @@ class SingleStoreProvider extends ServiceProvider
      */
     public function register(): void
     {
-        Connection::resolverFor('singlestore', function ($connection, $database, $prefix, $config) {
+        Connection::resolverFor('snowflake', function ($connection, $database, $prefix, $config) {
             return new Connection($connection, $database, $prefix, $config);
         });
     }
 
     public function boot()
     {
-        $this->app->bind('db.connector.singlestore', Connector::class);
+        $this->app->bind('db.connector.snowflake', Connector::class);
     }
 }
