@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Schema\Blueprint;
+namespace Snowflake\Laravel\Schema\Blueprint;
 
 trait AddsTableFlags
 {

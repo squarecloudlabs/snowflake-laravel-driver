@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Query;
+namespace Snowflake\Laravel\Query;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Grammars\MySqlGrammar;

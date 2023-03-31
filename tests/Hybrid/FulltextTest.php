@@ -4,7 +4,7 @@ namespace SingleStore\Laravel\Tests\Hybrid\Json;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\DB;
-use SingleStore\Laravel\Schema\Blueprint;
+use Snowflake\Laravel\Schema\Blueprint;
 use SingleStore\Laravel\Tests\BaseTest;
 use SingleStore\Laravel\Tests\Hybrid\HybridTestHelpers;
 

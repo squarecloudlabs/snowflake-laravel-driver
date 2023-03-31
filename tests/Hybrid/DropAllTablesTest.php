@@ -3,7 +3,7 @@
 namespace SingleStore\Laravel\Tests\Hybrid;
 
 use Illuminate\Support\Facades\Schema;
-use SingleStore\Laravel\Schema\Blueprint;
+use Snowflake\Laravel\Schema\Blueprint;
 use SingleStore\Laravel\Tests\BaseTest;
 
 class DropAllTablesTest extends BaseTest

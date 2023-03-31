@@ -3,7 +3,7 @@
 namespace SingleStore\Laravel\Tests\Hybrid;
 
 use Illuminate\Support\Facades\DB;
-use SingleStore\Laravel\Schema\Blueprint;
+use Snowflake\Laravel\Schema\Blueprint;
 use SingleStore\Laravel\Tests\BaseTest;
 
 class UnionTest extends BaseTest

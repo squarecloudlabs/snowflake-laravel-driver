@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Fluency;
+namespace Snowflake\Laravel\Fluency;
 
 use Illuminate\Support\Fluent;
 

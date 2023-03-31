@@ -1,12 +1,12 @@
 <?php
 
-namespace SingleStore\Laravel\Schema\Blueprint;
+namespace Snowflake\Laravel\Schema\Blueprint;
 
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Grammars\Grammar;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Arr;
-use SingleStore\Laravel\Schema\Blueprint as SingleStoreBlueprint;
+use Snowflake\Laravel\Schema\Blueprint as SingleStoreBlueprint;
 
 trait InlinesIndexes
 {

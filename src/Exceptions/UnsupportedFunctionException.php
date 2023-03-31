@@ -1,7 +1,7 @@
 <?php
 
-namespace SingleStore\Laravel\Exceptions;
+namespace Snowflake\Laravel\Exceptions;
 
-class UnsupportedFunctionException extends SingleStoreDriverException
+class UnsupportedFunctionException extends SnowflakeDriverException
 {
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Schema;
+namespace Snowflake\Laravel\Schema;
 
 use Exception;
 use Illuminate\Database\Connection;
@@ -9,9 +9,9 @@ use Illuminate\Database\Schema\Grammars\MySqlGrammar;
 use Illuminate\Support\Fluent;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use SingleStore\Laravel\Schema\Blueprint as SingleStoreBlueprint;
-use SingleStore\Laravel\Schema\Grammar\CompilesKeys;
-use SingleStore\Laravel\Schema\Grammar\ModifiesColumns;
+use Snowflake\Laravel\Schema\Blueprint as SingleStoreBlueprint;
+use Snowflake\Laravel\Schema\Grammar\CompilesKeys;
+use Snowflake\Laravel\Schema\Grammar\ModifiesColumns;
 
 class Grammar extends MySqlGrammar
 {

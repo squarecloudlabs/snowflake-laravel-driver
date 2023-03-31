@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Connect;
+namespace Snowflake\Laravel\Connect;
 
 use Illuminate\Database\Connectors\MySqlConnector;
 

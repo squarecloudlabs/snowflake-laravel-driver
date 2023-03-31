@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Schema\Grammar;
+namespace Snowflake\Laravel\Schema\Grammar;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Fluent;

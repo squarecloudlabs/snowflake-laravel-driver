@@ -1,11 +1,11 @@
 <?php
 
-namespace SingleStore\Laravel\Connect;
+namespace Snowflake\Laravel\Connect;
 
 use Illuminate\Database\MySqlConnection;
-use SingleStore\Laravel\Query;
+use Snowflake\Laravel\Query;
 use SingleStore\Laravel\QueryGrammar;
-use SingleStore\Laravel\Schema;
+use Snowflake\Laravel\Schema;
 use SingleStore\Laravel\SchemaBuilder;
 use SingleStore\Laravel\SchemaGrammar;
 
@@ -50,7 +50,7 @@ class Connection extends MySqlConnection
      */
     public function query()
     {
-        return new Query\Builder(
+        return new \Snowflake\Laravel\Query\Builder(
             $this,
             $this->getQueryGrammar(),
             $this->getPostProcessor()

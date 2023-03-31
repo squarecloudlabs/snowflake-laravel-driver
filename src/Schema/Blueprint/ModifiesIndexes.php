@@ -1,8 +1,8 @@
 <?php
 
-namespace SingleStore\Laravel\Schema\Blueprint;
+namespace Snowflake\Laravel\Schema\Blueprint;
 
-use SingleStore\Laravel\Fluency\SpatialIndexCommand;
+use Snowflake\Laravel\Fluency\SpatialIndexCommand;
 
 trait ModifiesIndexes
 {

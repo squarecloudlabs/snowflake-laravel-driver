@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Schema;
+namespace Snowflake\Laravel\Schema;
 
 use Closure;
 use Illuminate\Database\Schema\MySqlBuilder;

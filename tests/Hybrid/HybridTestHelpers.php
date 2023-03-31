@@ -7,9 +7,9 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Mockery;
-use SingleStore\Laravel\Connect\Connection;
-use SingleStore\Laravel\Schema\Blueprint;
-use SingleStore\Laravel\Schema\Grammar;
+use Snowflake\Laravel\Connect\Connection;
+use Snowflake\Laravel\Schema\Blueprint;
+use Snowflake\Laravel\Schema\Grammar;
 
 trait HybridTestHelpers
 {

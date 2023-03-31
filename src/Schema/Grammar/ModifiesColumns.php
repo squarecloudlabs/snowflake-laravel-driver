@@ -1,6 +1,6 @@
 <?php
 
-namespace SingleStore\Laravel\Schema\Grammar;
+namespace Snowflake\Laravel\Schema\Grammar;
 
 use Exception;
 use Illuminate\Database\Schema\Blueprint;
