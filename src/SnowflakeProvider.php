@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Snowflake\Laravel\Connect\Connection;
 use Snowflake\Laravel\Connect\Connector;
 
-class SingleStoreProvider extends ServiceProvider
+class SnowflakeProvider extends ServiceProvider
 {
     /**
      * Register the service provider.

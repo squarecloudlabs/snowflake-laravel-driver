@@ -39,10 +39,12 @@ This repository contains a Snowflake Driver for Laravel. This driver wraps the o
 
 ## Install
 
+This package is under alpha development use the version as `dev-main`
+
 You can install the package via composer:
 
 ```shell
-composer require squarecloudlabs/snowflake-laravel-driver
+composer require squarecloudlabs/snowflake-laravel-driver:dev-main
 ```
 
 **This package requires pdo_mysql** to be installed. If you aren't sure check to see if `pdo_mysql` is listed when you run `php -i`.
